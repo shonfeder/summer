@@ -1,0 +1,16 @@
+lib: [
+  "_build/install/default/lib/summer/META" {"META"}
+  "_build/install/default/lib/summer/opam" {"opam"}
+  "_build/install/default/lib/summer/summer.cmi"
+  "_build/install/default/lib/summer/summer.cmx"
+  "_build/install/default/lib/summer/summer.cmt"
+  "_build/install/default/lib/summer/summer.ml"
+  "_build/install/default/lib/summer/summer.cma"
+  "_build/install/default/lib/summer/summer.cmxa"
+  "_build/install/default/lib/summer/summer.a"
+  "_build/install/default/lib/summer/summer.cmxs"
+]
+bin: [
+  "_build/install/default/bin/tests" {"tests"}
+  "_build/install/default/bin/summer" {"summer"}
+]

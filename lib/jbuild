@@ -1,0 +1,8 @@
+(jbuild_version 1)
+
+(library
+ ((name         summer)
+  (public_name  summer)
+  (synopsis     "Description of library summer")
+  (libraries    (core))
+  (preprocess   (pps (ppx_deriving.std)))))
