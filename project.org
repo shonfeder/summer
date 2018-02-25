@@ -1,0 +1,148 @@
+#+TITLE: Summer : An experiment in programming with term logic
+
+More precisely, an experiment in programming with constructive, structuralist,
+modal, extensibly typed, term logic.
+
+* What does it mean?
+** Constructive
+   A proof is a /construction/, in a very literal sense. To prove some conclusion
+   P, we construct P out of other parts.
+** Structuralist
+   The logical connectives are taken to be patterns that occur in inferential
+   networks. E.g. conjunction is a ...
+** Modal
+   Logically significant phrases are not limited to the statements and
+   assertions we're used to. Consider also interrogatives, proposals, mere
+   considerations, imperatives, predictions. Summer strives to empower the user
+   with the full power of inferential structures, including those which allow
+   deduction of an act from an imperative, an answer from a question, and an
+   analysis from a proposal. The first should provide a (logically limited and
+   cohesive) imperative idiom. The second provides querying (ala prolog). The
+   third provides program introspection. Similar places should be found for the
+   other modalities.
+** Extensibly Typed
+   Coherent thinking requires consideration of category differences. Many well
+   known demonstrations of this need are drawn from the fact that we cannot, in
+   general, coherently predicate all the same properties of ideas that we do of
+   physical things. It is therefore important that the language guard against
+   category mistakes with a strong typing discipline.
+
+   On the other hand, the poetic plasticity of meanings makes it possible to
+   extend our expression and understanding to the coherent comprehension of any
+   well formed phrase. It takes a mere paragraph to set the stage for describing
+   the difference between blue and green ideas. It should be just as easy in
+   Summer.
+** Term Logic
+   Summer is named in homage to Scott Sommers who invented "term functor logic"
+   (TFL), in which predication is interpreted as summation: ~A + B~ means "some
+   As are B".
+
+   Subject and predicate terms are on the same level, and they stand for
+   collections of thing *things*. This is in contrast to propositional and
+   predicate logic. In the latter, if ~B~ is "between" and ~a~, ~b~, and ~c~
+   name three objects, ~Babc~ is taken to mean something like "a is between b
+   and c". In term logic, if ~B~ is "between" and "C", "D", and "E" are some
+   other properties, then ~B(C,D,E)~ means something like "the betweenness of
+   things that are C with respect to things that are D and things that are E".
+
+   Modern predicate logic (MPL) takes its molecular constructs to stand for
+   *propositions* which are then interpreted through a truth-theoretic or
+   proof-theoretic substrate, and these substrates eventually come to rest on
+   determinations of the things in question. So a truth-theoretic semantics says
+   a proposition is given by a truth table, and the truth table is determined by
+   the states of affairs, which involve (even if they are not reduced to)
+   arrangements between the things under discussion. A proof-theoretic account
+   isn't fundamentally different in this respect, interpreting the meaning of
+   propositions as the set of proofs of that proposition, and the primary proofs
+   determined via evidence obtained through some relation with the things in
+   question.
+
+   In term logic, the molecular constructs stand for relations between the
+   *things* under consideration. The propositional is constructed when
+   we quantify the things: ~all B(C,D,E)~ gives us a propositional object from
+   an ontical one.
+
+   In MPL, logical operators are always already at work on propositions, since
+   it has no way of speaking about things (object variables) unless they have
+   been bound in a proposition (via predication). In Summer, logical operators
+   always designate the same inferential patterns, but the semantics vary
+   depending on the complexity of the terms they operate on:
+
+   - ~Red & Round & Soft~ means "red, round, soft things".
+   - ~Gives(Boy,Dog,Ball) & Takes(Capitalist,LifeForce,Proletariat)~ means... ?
+
+* Ideas
+** Matrix Based
+*** Flashes
+    - A position in a matrix is an individual.
+    - Tensor sum is property addition =big brown things= == =Big * Brown=
+    - What is the tensor product? (conjunction)!!?
+    - Any sense to n-dimensional matrices in this view? What would different
+      vectors be?
+    - Should be efficient (computers know how to deal with arrays).
+    - Dealing with vectors means we will be dealing with linear algebra
+    - Linear algebra is (under one interpretation) about vectors, directions of
+      movement.
+    - Linear algebra is germane and important for machine learning.
+    - Machine learning is computation with neural nets.
+    - Neural nets are grounded in graph theory.
+    - Structuralist logic (ala Herz, via Koslow) is a graph theoretic
+      interpretation of logic.
+*** Implementation
+**** Ontic array
+     - An array of bits representing a property.
+     - An individual is an index into the array.
+     - 1 means the individual has the property.
+     - 0 means the individual doesn't have the property.
+
+**** The World
+
+     - The world (all that exists) is the fundamental ontic array.
+     - All that is exists, so all bits are flipped to 1.
+
+**** Predication
+
+     Predicates are defined purely extensionally.
+     If =P(a)=, =P(b)=, =~P(c), =P= is defined as
+
+     #+BEGIN_SRC
+      a b c
+     [1 1 0]
+     #+END_SRC
+
+
+***** Composition of predication
+
+      If =P= is =Q= then =P land Q= (binary and on the two arrays).
+
+**** Relations
+
+     These two should be equivalent
+***** n-ary relations as n-dimensional binary matrices
+      - The index of the axes are the entities.
+      - Each axis is a position in the relation.
+
+      E.g. if =Rab=, =Rbc=, then
+
+      #+BEGIN_SRC
+         1st
+         a b c
+     2 a 0 0 0
+     n b 1 0 0
+     d c 0 1 0
+      #+END_SRC
+
+***** n-ary relations as arrays of n-tuples of indices
+
+** Compounds and conjunctions
+
+   Can conjunction can be rendered as a special case of relations.
+
+   Cannot a conjunction just be a relation between things:
+
+   - An apple and a pear.
+   - A proof of A and a proof of B.
+
+** Different proofs systems for different moods?
+
+* Tasks
