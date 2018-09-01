@@ -1,1 +1,3 @@
-#+TITLE: Summer: Experiments in Programming with Term Logic
+#+TITLE: Summer: Programming in Term Logic
+
+The world is a bit vector.
