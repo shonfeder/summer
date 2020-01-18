@@ -1,0 +1,6 @@
+(library
+ (name         summer)
+ (public_name  summer)
+ (synopsis     "Description of library summer")
+ (libraries    core bitv)
+ (preprocess   (pps ppx_deriving.std)))

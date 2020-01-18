@@ -1,0 +1,17 @@
+#+TITLE: Documenting the Development of Summer
+#+BIBLIOGRAPHY: /Users/sf/Dropbox/bibliography/references.bib
+
+* Singular terms
+
+  #+BEGIN_QUOTE
+  Before Frege the sentence "Socrates is moral" was often parsed as having the
+  form 'every Socrates is mortal' with 'Socrates' or 'Socratizer' as a term
+  whose application is restricted to a single thing.
+  #+END_QUOTE
+
+  cite:sommers84
+
+  Singuler terms are functions from the world array to ontic arrays with only a
+  single entity indicated.
+
+bibliography:/Users/sf/Dropbox/bibliography/references.bib

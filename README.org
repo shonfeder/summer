@@ -1,3 +1,7 @@
 #+TITLE: Summer: Programming in Term Logic
 
+*WIP*
+
 The world is a bit vector.
+
+Inspired by Fred Sommer's Term Functor Logic.

@@ -1,0 +1,5 @@
+(executable
+ (name         main)
+ (public_name  summer)
+ (libraries    summer)
+ (preprocess   (pps ppx_deriving.std)))
